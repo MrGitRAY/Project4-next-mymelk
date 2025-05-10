@@ -30,7 +30,7 @@ body {
   --color-secondry: #101d2c;
   --color-secondry-light: #101d2cef;
 
-  --color-gray-light-1: #fce5d9;
+  --color-gray-light-1: #eee2dc;
   --color-gray-light-2: #aaa;
 
   --color-gray-dark-1: #54483a;
@@ -68,8 +68,8 @@ body {
 }
 
 .header__logo {
-  width: 15rem;
-  height: 4rem;
+  width: 7.5rem;
+  height: 8.5rem;
   justify-self: center;
   align-items: start;
 }
@@ -733,34 +733,17 @@ body {
     font-size: 50%;
   }
 
-  .container {
-    grid-template-rows: 6rem 50vh min-content 40vw repeat(3, min-content);
-    grid-template-columns:
-      [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
-        [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  }
+    .container {
+      grid-template-rows: 6rem 50vh min-content 40vw repeat(3, min-content);
+      grid-template-columns:
+        [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
+          [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    }
 
-  .real-tors {
-    grid-column: full-start / full-end;
-    grid-row: 3 / 4;
-    padding: 4rem 0;
-  }
-
-  .real-tors__list {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .real-tors__details {
-    margin-left: 2.5rem;
-  }
-
-  .sidebar {
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-  }
+    .sidebar {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+    }
 
   .sidebar__label {
     justify-content: flex-start;
@@ -815,6 +798,23 @@ body {
   .story__content {
     grid-column: full-start / full-end;
     grid-row: 6 / 7;
+  }
+
+  .real-tors {
+    grid-column: full-start / full-end;
+    grid-row: 3 / 4;
+    padding: 4rem 0;
+  }
+
+  .real-tors__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .real-tors__details {
+    margin-left: 2.5rem;
   }
 }
 

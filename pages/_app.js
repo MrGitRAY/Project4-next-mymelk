@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  // return <Component {...pageProps} />
 
   return (
     <div className="container">
@@ -48,7 +47,7 @@ export default function App({ Component, pageProps }) {
       </div>
 
       <header className="header">
-        <img src="img/logo.png" alt="Nexter Logo" className="header__logo" />
+        <img src="img/myMelkLogo.png" alt="Logo" className="header__logo" />
         <h3 className="u-heading-3 u-heading--light">خانه خودتان:</h3>
         <h1 className="u-heading-1">با خرید خانه نهایت آزادی را احساس کنید</h1>
         <button className="btn header__btn btn-brown">
